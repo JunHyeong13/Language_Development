@@ -1,0 +1,99 @@
+{
+  "_from": "https://www.atom.io/api/packages/code-peek/versions/1.4.21/tarball",
+  "_id": "code-peek@1.4.21",
+  "_inBundle": false,
+  "_integrity": "sha512-BtnHddpJ8ptS3mLB2vJzUVWVzlYyYAVJqnPl1V9kWb6wpqUKsrly6vpehBYKR3wVTrGa5hzKU83xSrEXvUuEhg==",
+  "_location": "/code-peek",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/code-peek/versions/1.4.21/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/code-peek/versions/1.4.21/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/code-peek/versions/1.4.21/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/code-peek/versions/1.4.21/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/code-peek/versions/1.4.21/tarball",
+  "_shasum": "364896173b81c9e87e7ec0c4d8b2cb5fa8710240",
+  "_spec": "https://www.atom.io/api/packages/code-peek/versions/1.4.21/tarball",
+  "_where": "C:\\Users\\akshd\\AppData\\Local\\Temp\\apm-install-dir-202086-10056-6gngv1.n0ul6",
+  "activationCommands": {
+    "atom-text-editor": [
+      "code-peek:peekFunction",
+      "code-peek:toggleCodePeekOff"
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/DFreds/code-peek-atom/issues"
+  },
+  "bundleDependencies": false,
+  "configSchema": {
+    "askIfSaveOnModified": {
+      "type": "boolean",
+      "description": "When a file is modified and the code peek panel is closed without saving, open a dialogue confirming that changes will be lost.",
+      "default": true
+    },
+    "ignoredPaths": {
+      "type": "array",
+      "description": "Comma separated list of paths or files to ignore. Any files or directories in 'Core -> Ignored Names' will be ignored even if it is not listed here. Any files and directories ignored by the current project's VCS system will be ignored if the 'Core -> Exclude VCS Ignored Paths' is checked.",
+      "default": [],
+      "items": {
+        "type": "string"
+      }
+    },
+    "codePeekLocation": {
+      "type": "string",
+      "description": "Location of the code peek panel when it appears.",
+      "default": "Bottom",
+      "enum": [
+        "Bottom",
+        "Top",
+        "Left",
+        "Right",
+        "Header",
+        "Footer",
+        "Modal"
+      ]
+    },
+    "maxHeight": {
+      "type": "integer",
+      "description": "Max height of the panel. Ranges from 200 to 800 pixels. If left or right is chosen for the location, this has no effect.",
+      "default": 300,
+      "minimum": 200,
+      "maximum": 800
+    },
+    "maxWidth": {
+      "type": "integer",
+      "description": "Max width of the panel. Ranges from 200 to 1000 pixels. If top, bottom, header, footer, or modal is chosen for the location, this has no effect.",
+      "default": 500,
+      "minimum": 200,
+      "maximum": 1000
+    }
+  },
+  "dependencies": {
+    "atom-space-pen-views": "^2.1.0"
+  },
+  "deprecated": false,
+  "description": "Quickly peek and edit functions in separate files from the context of your current editor.",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/DFreds/code-peek-atom#readme",
+  "keywords": [
+    "peek",
+    "code-peek",
+    "peek-definition",
+    "quick-edit"
+  ],
+  "license": "MIT",
+  "main": "./lib/code-peek",
+  "name": "code-peek",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DFreds/code-peek-atom.git"
+  },
+  "version": "1.4.21"
+}
